@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts and Culture</title>
+     <link rel="stylesheet" href="fwddproject/CSS/fontawesome.css">
+     <link rel="stylesheet" href="slick.css">
+     <script src="slick.js"></script>
+     <link rel="stylesheet" href="service.css">
+     <link rel="stylesheet" href="footer.css">
+  
+    <script src="https://kit.fontawesome.com/9c7d2e07d5.js"></script>
+    <style>
+        
+    
+      .content-margin{
+          margin: 15px;
+          max-width: 100%;
+  
+      }
+  </style>
+
+    <!--Slick Slider-->
+</head>
+
+<body>
+
+<header>
+    <!--NAVBAR START-->
+    <nav>
+        <input type="checkbox" id="check">
+ 		<label for="check">
+ 			<i class="fas fa-bars" id="btn"></i>
+ 			<i class="fas fa-times" id="cancel"></i>
+ 		</label>
+ 		<img src="logo1.png">
+ 		<ul>
+ 			<li><a href="index.html">Home</a></li>
+ 			<li><a href="service.html">Services</a></li>
+ 			<li><a href="aboutus.html">About Us</a></li>
+ 			<li><a href="login.html">Login</a></li>
+ 			<li><a href="#">Signup</a></li>
+ 		</ul>
+    </nav>
+    </header>
+
+
+
+
+  <div class="container">
+    <div class="content-margin">
+    <h1>Services</h1>
+
+    <p>Custom Software Development
+       We help you to deliver engaging experiences for your customers and employees. If you need quick tangible results for your custom software needs, consider us as your partner. Our services vary from support during office hours to the demand of 7x24x365 customer service and technical support for business critical applications. We understand the industry expertise of wholesale, retail, warehousing, digital marketplaces and B2B business.
+    <!--TEAM CONTENT START-->
+    <div class="team" id="aboutus">
+        <div class="team-title">Our Team</div>
+
+
+    <div class="contactus" id="contactus">
+        <form>
+            <table>
+                <tr>
+                    <td>
+            <label for="name">Name</label></td>
+            <td>
+            <input type="text" placeholder="Type your name" id="name"><br></td>
+        </tr>
+             <tr>
+                    <td>
+            <label for="name">Email</label></td>
+            <td>
+            <input type="text" placeholder="Type your email address" id="email"><br></td>
+        </tr>
+        <tr>
+            <td>
+            <label for="message">Enter Your Message</label></td>
+           <td> <input type="text" placeholder="enter message"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Send Message"></td>
+        </tr>
+        </table>
+
+        </form>
+    </div>
+  </div>
+</div>
+
+  <!--Footer START-->
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        
+      <p class="footer-links">
+        <a href="#">Home</a>
+        |
+        
+        |
+        <a href="#">About</a>
+        |
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">© 2021 Arts and culture </p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+          <p><span>lord buddha education foundation,
+           </span>
+          Maitidevi,kathmandu</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>98137877788778767887</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href=support@eduonix.com</a>www.lbef.edu.np</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the website</span>
+                      an arts can show things that other people are terrified of expression</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+</footer>
+
+
+</body>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</html>
